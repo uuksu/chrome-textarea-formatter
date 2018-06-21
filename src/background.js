@@ -1,4 +1,4 @@
-chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
 	if(request.cmd == "options") {
 		
 		//default options
@@ -39,7 +39,7 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 });
 
 chrome.pageAction.onClicked.addListener(function(tab) {
-	chrome.tabs.sendRequest(tab.id, "toggle_state", function(response) {
+	chrome.tabs.sendMessage(tab.id, "toggle_state", function(response) {
 		showIcon(tab.id, response.enabled);
 	});
 	

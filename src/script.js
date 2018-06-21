@@ -442,7 +442,7 @@ function toggleState() {
 	}
 }
 		
-chrome.extension.sendRequest({"cmd":"options"}, function(response) {
+chrome.extension.sendMessage({"cmd":"options"}, function(response) {
 	options = response;
 	
 	if(options.default_state == "enabled") {
@@ -454,15 +454,15 @@ chrome.extension.sendRequest({"cmd":"options"}, function(response) {
 	
 	if(options.icon == "focus") {
 		$("textarea").live("focus", function(event) {
-			chrome.extension.sendRequest({"cmd":"show_icon","enabled":enabled});
+			chrome.extension.sendMessage({"cmd":"show_icon","enabled":enabled});
 		});
 	} else if(options.icon == "show") {
-		chrome.extension.sendRequest({"cmd":"show_icon","enabled":enabled});
+		chrome.extension.sendMessage({"cmd":"show_icon","enabled":enabled});
 	} 
 	
 });
 
-chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
 	if(request == "toggle_state") {
 		toggleState();
 		sendResponse({"enabled":enabled});
