@@ -1,6 +1,10 @@
-# chrome-textarea-formatter
+# Chrome Textarea Formatter
 
 If you ever tried editing formatted code snipped inside browser's textarea field you probably noticed how inconvenient it is because textareas don't support Tab key formatting. This extension is intended to help those who are missing basic code formatting features inside textareas that are present in most modern IDEs.
+
+NOTE! This is fork of the [original software](https://code.google.com/archive/p/chrome-textarea-formatter/) that was automatically exported to GitHub from Google Code. Original extension is now removed from Chrome Web Store so I decided to update and re-release it.
+
+License says this is my work as I could not find name of the original creator. All credit goes to him/her!
 
 ## Features:
 
@@ -16,3 +20,11 @@ If you ever tried editing formatted code snipped inside browser's textarea field
 ## Installation:
 
 Please install the extension by loading it directly to Chrome.
+
+## Changelog
+
+* 0.3: Added ability to move selected lines up and down using Alt+Up/Down hotkey (alternate hotkey: Alt+Shift+Up/Down) * Added ability to copy selected lines up and down using Ctrl+Up/Down hotkey (alternate hotkeys: Ctr+Shift+Up/Down, Ctr+Alt+Up/Down, Ctr+Alt+Shift+Up/Down) * Added ability to delete selected lines using Ctrl+D hotkey (alternate hotkeys: Ctrl+Alt+D, Ctrl+Alt+Shift+D)
+
+* 0.2: Added address bar icon that lets enable/disable extension * Added option to change default extension state (enabled or disabled)
+
+* 0.1: Initial release
