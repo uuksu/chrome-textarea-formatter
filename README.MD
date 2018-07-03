@@ -19,9 +19,11 @@ License says this is my work as I could not find name of the original creator. A
 
 ## Installation:
 
-Please install the extension by loading it directly to Chrome.
+Please install the extension from [Official Chrome Extensions site](https://chrome.google.com/webstore/detail/chrome-textarea-formatter/oglpfnoajkapekjobldcbbjhgjndbfkf) by clicking "Add to Chrome" button.
 
 ## Changelog
+
+* 0.4: Updated extension to use Manifest V2 and newer Chrome APIs.
 
 * 0.3: Added ability to move selected lines up and down using Alt+Up/Down hotkey (alternate hotkey: Alt+Shift+Up/Down) * Added ability to copy selected lines up and down using Ctrl+Up/Down hotkey (alternate hotkeys: Ctr+Shift+Up/Down, Ctr+Alt+Up/Down, Ctr+Alt+Shift+Up/Down) * Added ability to delete selected lines using Ctrl+D hotkey (alternate hotkeys: Ctrl+Alt+D, Ctrl+Alt+Shift+D)
 
