@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Textarea Code Formatter",
+	"name": "Chrome Textarea Formatter",
 	"description": "Gives textareas basic code formatting abilities found in modern IDE.",
-	"version": "1.0.0.0",
+	"version": "0.4.0.0",
 	"icons": {
 		"128": "icon128.png",
 		"48": "icon48.png",
